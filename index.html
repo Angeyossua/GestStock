@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Gestion de Stock</h1>
+</header>
+
+<main>
+    <h2>Liste des Produits</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom du Produit</th>
+                <th>Quantité</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+        <tbody id="productTable">
+            <!-- Les lignes de produits seront ajoutées ici dynamiquement -->
+        </tbody>
+    </table>
+
+    <h2>Ajouter un Nouveau Produit</h2>
+    <form id="productForm">
+        <input type="text" id="productName" placeholder="Nom du Produit" required>
+        <input type="number" id="productQuantity" placeholder="Quantité" required>
+        <input type="number" id="productPrice" placeholder="Prix" step="0.01" required>
+        <input type="submit" value="Ajouter">
+    </form>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
